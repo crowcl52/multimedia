@@ -1,0 +1,104 @@
+/* Diseños generales */
+.top60{
+    margin-top: 60px;
+}
+
+.text{
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    
+}
+
+.title{
+    color:#3473b9;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; 
+    font-size: 18pt;
+}
+
+/* Diseño navbar */
+.nav{
+    background-color: #182222;
+    width: 100%;
+    height: 1   00px;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.nav-item{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item img{
+    width: 50px;
+}
+
+.video{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.video-container{
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.video-item{
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos-container{
+    width: 40%;
+    min-height: 700px;
+    background-color: #0d0e0e;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.videos-view{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+.item-video{
+    width: 40%;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.item-video img{
+    width: 100%;
+}
+
+.buttons{
+    width: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.volumen{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+}

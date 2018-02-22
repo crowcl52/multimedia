@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multi-View - Imagen</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/norm.css">
+    <link rel="stylesheet" href="lib/css/main.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-item">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+        <div class="nav-item">
+            <a href="index.html" class="text">Video</a>
+            <a href="imagen.html" class="text">Imagen</a>
+            <a href="animacion.html" class="text">Animación</a>
+            <a href="audio.html" class="text">Sonido</a>
+        </div>
+    </nav>
+    <!-- Seccion de Imagenes -->
+    <section class="video">
+        <div class="video-container ">
+            <h1 class="title top60">Imagen</h1>
+            <div class="video-item top60">
+                <img id="img1" class="mainImg" src="assets/images/img1.png" width="700px">
+            </div>
+        </div>
+        <div class="videos-container">
+            <h1 class="title top60">Mis Imagenes</h1>
+            <div class="videos-view top60">
+                <div onclick="setImg('img1.png')" class="item-video">
+                    <img src="assets/images/img1.png" alt="">
+                </div>
+                <div onclick="setImg('img2.jpg')" class="item-video">
+                    <img src="assets/images/img2.jpg" alt="">
+                </div>
+                <div onclick="setImg('img3.jpg')" class="item-video">
+                    <img src="assets/images/img3.jpg" alt="">
+                </div>
+                <div onclick="setImg('img4.png')" class="item-video">
+                    <img src="assets/images/img4.png" alt="">
+                </div>
+                <div onclick="setImg('img5.jpg')" class="item-video">
+                    <img src="assets/images/img5.jpg" alt="">
+                </div>
+                <div onclick="setImg('img6.jpg')" class="item-video">
+                    <img src="assets/images/img6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Script de la app -->
+    <script src="lib/js/imagen.js"></script>
+</body>
+</html>

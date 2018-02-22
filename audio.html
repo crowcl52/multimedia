@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multi-View - Audio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/norm.css">
+    <link rel="stylesheet" href="lib/css/main.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-item">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+        <div class="nav-item">
+            <a href="index.html" class="text">Video</a>
+            <a href="imagen.html" class="text">Imagen</a>
+            <a href="animacion.html" class="text">Animación</a>
+            <a href="audio.html" class="text">Sonido</a>
+        </div>
+    </nav>
+    <!-- Seccion de video -->
+    <section class="video">
+        <div class="video-container ">
+            <h1 class="title top60">Musica</h1>
+            <div class="video-item top60">
+                <audio id="audio1" width="600px;"  >
+                    <source src="assets/audio/pista1.mp3" type="audio/mpeg">
+                </audio>
+                <img src="assets/images/musica.gif" alt="">
+                <div class="buttons">
+                    <a  onclick="atras()" class="btn"> <img src="assets/images/atrasar.png" alt=""> </a>
+                    <a id="play"  onclick="playPause()" class="btn"> <img src="assets/images/play.png" alt=""> </a>
+                    <a id="pausa"  onclick="playPause()" class="btn"> <img src="assets/images/pausa.png" alt=""> </a>
+                    <a  onclick="adelante()" class="btn"> <img src="assets/images/adelantar.png" alt=""> </a>
+                    <div class="volumen">
+                        <a  onclick="volM()" class="btn"> <img src="assets/images/volm.png" alt=""> </a>
+                        <p class="title" id="vol"></p>
+                        <a  onclick="volP()" class="btn"> <img src="assets/images/volp.png" alt=""> </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="videos-container">
+            <h1 class="title top60">Mis Pistas</h1>
+            <div class="videos-view top60">
+                <div onclick="setVideo('pista1')" class="item-video">
+                    <img src="assets/images/disc.png" alt="">
+                    <p class="text">Pista1</p>
+                </div>
+                <div onclick="setVideo('pista2')" class="item-video">
+                    <img src="assets/images/disc.png" alt="">
+                    <p class="text">Pista2</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Script de la app -->
+    <script src="lib/js/audio.js"></script>
+</body>
+</html>
